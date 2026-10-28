@@ -1,0 +1,43 @@
+# ==============================================================================
+# Axes Definitions
+#     X  = Camera: Track 	Ship: Lateral Axis (Lt-0-Rt)
+#     Y  = Camera: Boom 	Ship: Vertical Axis (Dn-0-Up)
+#     Z  = Camera: Dolly 	Ship: Forward/Reverse Axis(Rv-0-Fw)
+#     rX = Camera: Roll 	Ship: Roll (Lt-0-Rt)
+#     rY = Camera: Tilt		Ship: Pitch (Dn-0-Up)
+#     xZ = Camera: Pan 		Ship: Yaw (Lt-0-Rt)
+# ==============================================================================
+# User Commands:
+# ------------------------------------------------------------------------------
+# AXES X(%), Y(%), Z(%), rX(%), rY(%), xZ(%), ramptime(seconds)
+# ------------------------------------------------------------------------------
+# PAUSE time(seconds)
+# ------------------------------------------------------------------------------
+# KEYDOWN key
+# KEYUP key
+# KEYTAP key
+# 
+# Reference:
+# https://github.com/WhiteMagic/JoystickGremlin/blob/develop/gremlin/keyboard.py
+# ------------------------------------------------------------------------------
+# IMPORT file_name.txt
+# ------------------------------------------------------------------------------
+# PLAYBACK filename.txt ('plays' a file containing sequence of joystick positions in 6 columns
+# ------------------------------------------------------------------------------
+# BLOCK block_name
+# [AXES, PAUSE, KEYDOWN, KEYUP, KEYTAP, CALL]
+# END
+# ------------------------------------------------------------------------------
+# CALL block_name
+# ==============================================================================
+# Joystick Gremlin log, for reviewing errors:
+# "C:\Users\[username]\joystick gremlin\user.log"
+# ==============================================================================
+
+# ==============================================================================
+# Everything below can be deleted, add your own instructions instead
+# A good rule of thumb is to point to another general file to IMPORT and make 
+# changes there, instead of having to change this camera_moves.txt file for 
+# every change you want to try
+# ------------------------------------------------------------------------------
+# IMPORT Control Files\camera_moves_basics.txt

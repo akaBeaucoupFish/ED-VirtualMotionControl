@@ -1,0 +1,103 @@
+# ==============================================================================
+# CHECK KEY BINDS!
+# Left Control+LeftAlt+Space=Enter Camera Mode
+# npenter=Toggle Free Cam
+# np2=FreeCamToggleHUD
+# ==============================================================================
+BLOCK enter_camera_mode
+KEYTAP Left Control+LeftAlt+Space
+PAUSE 0.2
+KEYTAP np2
+PAUSE 0.2
+KEYTAP npenter
+PAUSE 0.2
+END
+# ==============================================================================
+
+
+# ==============================================================================
+BLOCK forza_initial_position
+AXES -70 0 0 0 0 0 0
+PAUSE 1.2
+AXES 0 0 0 0 0 60 0
+PAUSE 0.4
+AXES 0 0 0 23 0 0 0
+PAUSE 0.35
+AXES 0 0 0 0 40 0 0
+PAUSE 1
+AXES 0 -50 0 0 0 0 0
+PAUSE 1.6
+AXES 0 0 -100 0 0 0 0
+PAUSE 5
+AXES 0 0 0 0 0 0 0
+END
+# ==============================================================================
+
+
+# ==============================================================================
+# Initialise
+# ==============================================================================
+CALL enter_camera_mode
+CALL forza_initial_position
+# Tilt down
+AXES 0 0 0 0 -25 0 0
+PAUSE 1.8
+# Back up
+AXES 0 0 0 0 0 0 0
+PAUSE 3
+# ==============================================================================
+# Increase camera speed x1
+# CHECK KEY BINDS!
+# npplus=FreeCamSpeedInc
+# ==============================================================================
+KEYTAP npplus
+PAUSE 0.2
+# ==============================================================================
+# Start recording
+# Left Alt+F9=Start/Stop nVidia Camera
+# ==============================================================================
+KEYTAP Left Alt+F9
+# ==============================================================================
+# Start orbit
+# ==============================================================================
+# forza_end_zoom_in
+AXES 0 10 25 0 10 0 1
+PAUSE 3
+# forza_end_orbit_half
+AXES 85 0 0 0 0 -37 0.5
+PAUSE 3.5
+# forza_sides
+AXES 50 0 0 0 0 0 0.5
+PAUSE 1.5
+# forza_end_orbit_full
+AXES 85 0 0 0 0 -37 0.5
+PAUSE 7.5
+# forza_sides
+AXES 50 0 0 0 0 0 0.5
+PAUSE 1.5
+# forza_ends_orbit_full / raised
+AXES 85 3 0 0 0 -37 0.5
+PAUSE 7.5
+# forza_sides
+AXES 50 0 0 0 0 0 0.5
+PAUSE 1.5
+# forza_ends_orbit_full / lowered
+AXES 85 -3 0 0 0 -37 0.5
+PAUSE 7.5
+# forza_sides
+AXES 50 0 0 0 0 0 0.5
+PAUSE 1.5
+# forza_end_orbit_half
+AXES 85 0 0 0 0 -37 0.5
+PAUSE 3.75
+# forza_end_zoom_out
+AXES 0 -3 -35 0 20 0 1
+PAUSE 4
+# ==============================================================================
+# Reset axes
+AXES 0 0 0 0 0 0 0
+# ==============================================================================
+# Stop recording
+# Left Alt+F9=Start/Stop nVidia Camera
+# ==============================================================================
+KEYTAP Left Alt+F9

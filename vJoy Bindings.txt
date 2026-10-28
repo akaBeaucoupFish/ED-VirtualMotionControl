@@ -1,0 +1,35 @@
+<MoveFreeCamY>
+		<Binding Device="vJoy" Key="Joy_ZAxis" />
+		<Inverted Value="0" />
+		<Deadzone Value="0.00000000" />
+</MoveFreeCamY>
+
+<MoveFreeCamX>
+		<Binding Device="vJoy" Key="Joy_XAxis" />
+		<Inverted Value="0" />
+		<Deadzone Value="0.00000000" />
+</MoveFreeCamX>
+
+<MoveFreeCamZ>
+		<Binding Device="vJoy" Key="Joy_YAxis" />
+		<Inverted Value="0" />
+		<Deadzone Value="0.00000000" />
+</MoveFreeCamZ>
+
+<PitchCamera>
+		<Binding Device="vJoy" Key="Joy_RYAxis" />
+		<Inverted Value="1" />
+		<Deadzone Value="0.00000000" />
+</PitchCamera>
+
+<YawCamera>
+		<Binding Device="vJoy" Key="Joy_RZAxis" />
+		<Inverted Value="0" />
+		<Deadzone Value="0.00000000" />
+</YawCamera>
+
+<RollCamera>
+		<Binding Device="vJoy" Key="Joy_RXAxis" />
+		<Inverted Value="0" />
+		<Deadzone Value="0.00000000" />
+</RollCamera>
